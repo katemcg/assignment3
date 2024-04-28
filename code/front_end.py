@@ -1,7 +1,8 @@
 import pandas as pd
 import tensorflow as tf
-from predict_images import predict_image_categories
 from preprocess_text import preprocessor
+from predict_text import predict_categories
+from model_loader import download_model_from_drive, load_model_from_file
 
 # Provide a comment like this:
 
