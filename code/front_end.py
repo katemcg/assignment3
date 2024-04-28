@@ -1,7 +1,7 @@
 import pandas as pd
 import tensorflow as tf
 from predict_images import predict_image_categories
-from preprocess_images import preprocessor
+from preprocess_text import preprocessor
 
 # Provide a comment like this:
 
