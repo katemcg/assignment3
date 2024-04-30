@@ -1,8 +1,8 @@
-# assignment3
+# Classifying Movie Reviews
 
 ## Content
 1. Introduction
-2. CNN Models
+2. Repo Structure
 3. Transfer Learning Models
 4. Comparing Results
 5. Conclusions
@@ -11,8 +11,25 @@
 ## 1. Introduction
 ...
 
-## 2. CNN Models
-...
+## 2. Repo Structure
+This repo contains a PyTorch implementation of the pretrained BERT and XLNET model for multi-label text classification.
+
+###  Structure of the code
+
+At the root of the project, you will see:
+
+```text
+├── code
+|  └── front_end.ipynb
+|  └── front_end.py
+|  └── model_loader.py　　　
+|  └── predict_text.py　　　　
+|  └── preprocess_text.py
+├── misc
+|  └── requirements.txt
+├── assignment3_Part1_3_hs3458_kem2231.ipynb
+├── assignment3_Part2_3_hs3458_kem2231.ipynb
+```
 
 |Model|Summary Plot|
 |:-:|:-:|
