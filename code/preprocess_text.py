@@ -4,20 +4,14 @@ from tensorflow.keras.utils import pad_sequences
 import numpy as np
 import re
 import string
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import nltk
 from nltk.corpus import stopwords
 #nltk.download('stopwords')
 
 stop_words = stopwords.words('english') + ['u', 'im', 'c']
-stemmer = nltk.SnowballStemmer("english")
 
 def remove_stopwords(text):
     text = ' '.join(word for word in text.split(' ') if word not in stop_words)
-    return text
-
-def stemm_text(text):
-    text = ' '.join(stemmer.stem(word) for word in text.split(' '))
     return text
 
 def clean_text(text):
@@ -34,7 +28,7 @@ def clean_text(text):
 
 def preprocessor(texts, maxlen=40):
     """
-    Preprocesses a list of texts using pre-defined functions to clean text, remove stopwords and stem words, tokenises using tf.keras Tokenizer and pads sequences to a fixed length of 40.
+    Preprocesses a list of texts using pre-defined functions to clean text and remove stopwords, tokenises using tf.keras Tokenizer and pads sequences to a fixed length of 40.
 
     Args:
     texts: List of strings representing input texts.
@@ -48,8 +42,6 @@ def preprocessor(texts, maxlen=40):
     text = text.apply(clean_text)
     # Remove stopwords
     text = text.apply(remove_stopwords)
-    # Stem all the words in the sentence
-    text = text.apply(stemm_text)
 
     # Initialize Tokenizer
     tokenizer = Tokenizer()
