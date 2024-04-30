@@ -54,3 +54,5 @@ def preprocessor(text, maxlen=40):
 
     # Pad sequences to a fixed length
     padded_sequences = pad_sequences(sequences, maxlen)
+
+    return padded_sequences, tokenizer
