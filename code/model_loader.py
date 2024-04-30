@@ -22,11 +22,3 @@ def load_sentiment_model(model_path):
     """Load the sentiment analysis model from a file."""
     model = load_model(model_path)
     return model
-
-# Example usage
-if __name__ == "__main__":
-    folder_id = 'your_google_drive_folder_id'
-    model_name = input("Enter the name of the model file: ")
-    dest_path = '/path/to/save/model.h5'
-    download_model_from_drive(folder_id, model_name, dest_path)
-    sentiment_model = load_sentiment_model(dest_path)
