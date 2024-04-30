@@ -12,12 +12,6 @@
 ...
 
 ## 2. Repo Structure
-This repo contains a PyTorch implementation of the pretrained BERT and XLNET model for multi-label text classification.
-
-###  Structure of the code
-
-At the root of the project, you will see:
-
 ```text
 ├── code
 |  └── front_end.ipynb
@@ -30,12 +24,6 @@ At the root of the project, you will see:
 ├── assignment3_Part1_3_hs3458_kem2231.ipynb
 ├── assignment3_Part2_3_hs3458_kem2231.ipynb
 ```
-
-|Model|Summary Plot|
-|:-:|:-:|
-|First CNN|![cnn1](./visuals/cnn1.png)
-|Second CNN|![cnn2](./visuals/cnn2.png)
-|Third CNN|![cnn_best](./visuals/cnn_best.png)
 
 ## 3. Transfer Learning Models
 ...
