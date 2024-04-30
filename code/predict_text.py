@@ -1,10 +1,10 @@
 import numpy as np
 
-def predict_sentiment(review, model):
-    """Predict sentiment on a single movie review."""
+def predict_sentiment(text, model):
+    """Predict sentiment of text reviews."""
     # Make predictions
-    sentiment_prob = model.predict(review)
+    predicted_sentiment = model.predict(text)
     # Assuming binary classification (positive/negative)
-    predicted_sentiment = 'Positive' if sentiment_prob > 0.5 else 'Negative'
+    # predicted_sentiment = 'Positive' if sentiment_prob > 0.5 else 'Negative'
 
     return predicted_sentiment
