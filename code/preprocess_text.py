@@ -31,7 +31,7 @@ def preprocessor(text, maxlen=40):
     Preprocesses a list of texts using pre-defined functions to clean text and remove stopwords, tokenises using tf.keras Tokenizer and pads sequences to a fixed length of 40.
 
     Args:
-    texts: List of strings representing input texts.
+    text: List of strings representing input texts.
     maxlen: Maximum length of sequences after padding, set to 40 by default.
 
     Returns:
