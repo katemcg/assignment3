@@ -15,14 +15,21 @@
 ```text
 ├── code
 |  └── front_end.ipynb
-|  └── front_end.py
+|  └── parent_dir.py　　
 |  └── model_loader.py　　　
-|  └── predict_text.py　　　　
-|  └── preprocess_text.py
-├── misc
+|  └── preprocess_text.py　　　　
+|  └── predict_text.py
+|  └── model_eval.py
 |  └── requirements.txt
-├── assignment3_Part1_3_hs3458_kem2231.ipynb
-├── assignment3_Part2_3_hs3458_kem2231.ipynb
+├── models
+|  └── model_.h5
+|  └── model_.h5
+|  └── model_.h5
+├── data
+|  └── test_sample.csv
+├── final reports
+|  └──  assignment3_Part1_3_hs3458_kem2231.ipynb
+|  └──  assignment3_Part2_3_hs3458_kem2231.ipynb
 ```
 
 ## 3. Transfer Learning Models
