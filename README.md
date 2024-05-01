@@ -10,7 +10,7 @@
 7. References
 
 ## 1. Introduction
-...
+This repo uses machine learning and deep learning models to predict the sentiment of movie reviews as being 'Postive' or 'Negative'. The following sections detail how to use the code for new data, as well as showing how the selected models have performed on the code they were trained on.
 
 ## 2. Repo Structure
 ```text
