@@ -5,8 +5,8 @@ import numpy as np
 import re
 import string
 import nltk
-from nltk.corpus import stopwords
 #nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 stop_words = stopwords.words('english') + ['u', 'im', 'c']
 
