@@ -4,6 +4,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 def display_table(text, predicted_sentiment, test_data_sentiment):
+    """
+    Returns a table displaying movie reviews, their corresponding predicted sentiment and ground truth sentiment.
+    Parameters:
+    - text: Column with unprocessed movie reviews in text.
+    - predicted_sentiment: Sentiment predicted by model.
+    - test_data_sentiment: Sentiment as per test data.
+    """
     df = pd.DataFrame({
         'Review': text,
         'Prediction': predicted_sentiment,
@@ -12,6 +19,12 @@ def display_table(text, predicted_sentiment, test_data_sentiment):
     return df
 
 def evaluate_model(test_data_sentiment, predicted_sentiment):
+    """
+    Returns a classification report as well as confusion matrix.
+    Parameters:
+    - predicted_sentiment: Sentiment predicted by model.
+    - test_data_sentiment: Sentiment as per test data.
+    """
     # Generate classification report
     report = classification_report(test_data_sentiment, predicted_sentiment)
     print("Classification Report:")
