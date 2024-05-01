@@ -21,15 +21,19 @@
 |  └── predict_text.py
 |  └── model_eval.py
 |  └── requirements.txt
+|  └── README.md
 ├── models
 |  └── model_.h5
 |  └── model_.h5
 |  └── model_.h5
+|  └── README.md
 ├── data
 |  └── test_sample.csv
+|  └── README.md
 ├── final reports
 |  └──  assignment3_Part1_3_hs3458_kem2231.ipynb
 |  └──  assignment3_Part2_3_hs3458_kem2231.ipynb
+├── README.md
 ```
 
 ## 3. Transfer Learning Models
