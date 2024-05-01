@@ -21,13 +21,16 @@ This repo uses machine learning and deep learning models to predict the sentimen
 |  └── display_results.py
 |  └── requirements.txt
 |  └── README.md
-|  └── models
-|    └── model_conv.h5
-|    └── model_glove.h5
-|    └── model_bert.h5
-|    └── README.md
 ├── data
 |  └── test_sample.csv
+|  └── README.md
+├── images
+|  └── neg_wordcloud.png
+|  └── pos_wordcloud.png
+├── models
+|  └── model_conv.h5
+|  └── model_glove.h5
+|  └── model_bert.h5
 |  └── README.md
 ├── assignment3_Part1_3_hs3458_kem2231.ipynb
 ├── assignment3_Part2_3_hs3458_kem2231.ipynb
