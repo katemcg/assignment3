@@ -40,9 +40,9 @@
 
 Clone the repository locally. Upload any new text data to predict on to "data" folder. In the "code" folder, open front_end.ipynb. Uncomment and run the first line in order to install required packages. In the indicated space, input the model on which you want to run the inference pipeline on your data. The model choices are as follows;
 
-model_conv: CNN model with Conv1D layers
-model_glove: Transfer learning model with GloVe embeddings
-model_bert: BERT model
+model_conv: CNN model with Conv1D layers   
+model_glove: Transfer learning model with GloVe embeddings   
+model_bert: BERT model   
 
 (Model training results are summarized further below.)
 
