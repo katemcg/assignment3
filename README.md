@@ -4,10 +4,8 @@
 1. Introduction
 2. Repo Structure
 3. Instructions
-4. Transfer Learning Models
+4. Exploratory Analysis
 5. Comparing Results
-6. Conclusions
-7. References
 
 ## 1. Introduction
 This repo uses machine learning and deep learning models to predict the sentiment of movie reviews as being 'Postive' or 'Negative'. The following sections detail how to use the code for new data, as well as showing how the selected models have performed on the code they were trained on.
@@ -45,26 +43,19 @@ model_bert: BERT model
 
 (Model training results are summarized further below.)
 
-## 4. Transfer Learning Models
-...
-
-|Model|Summary Plot|
-|:-:|:-:|
-|ResNet50|![resnet](./visuals/cnn1.png)
-|InceptionV3|![inv](./visuals/cnn2.png)
+## 4. Exploratory Analysis
+From the data analysis, we learned that the class balance was about even, at 52.17% positive, 47.83% negative. Additionally, both classes have a very similar distribution regarding review length. However, below the wordclouds show that there are differences in what the most common words in each set of data are.
+![Positive](./images/pos_wordcloud.png)
+![Negative](./images/neg_wordcloud.png)
 
 ## 5. Comparing Results
-|Model|Accuracy|Loss|Precision|Recall|
-|:-:|:-:|:-:|:-:|:-:|
-|CNN-1 |  |  |   | |
-|CNN-2 |  |  |   | |
-|CNN-3 |  |  |   | |
-|INCEPTIONV3 |  |  |   | |
-|RESNET50 |  |  |   | |
+The table below shows a strong trend of accuracy improving as the model number increased. This makes sense, because as we continued training, our models became more comlpex, and, so, better able to understand and predict on the data. Alongside accuracy, loss also mostly improves by decreasing. our best model was bert, but all the transfer models performed strongly.
 
-...
-
-## 6. Conclusions
-...
-
-## 7. References
+|Model | Accuracy  |  Loss|
+|:-:|:-:|:-:|
+|mod1 |  0.65101 | 1.1529|
+|mod2 |  0.72399 | 1.2366|
+|tuner |  0.75361 | 0.5703|
+|conv  | 0.74711 | 0.7456|
+|glove |  0.80347 | 0.4863|
+|bert |  0.84682 | 0.5296|
