@@ -3,10 +3,11 @@
 ## Content
 1. Introduction
 2. Repo Structure
-3. Transfer Learning Models
-4. Comparing Results
-5. Conclusions
-6. References
+3. Instructions
+4. Transfer Learning Models
+5. Comparing Results
+6. Conclusions
+7. References
 
 ## 1. Introduction
 ...
@@ -36,8 +37,10 @@
 |  └──  assignment3_Part2_3_hs3458_kem2231.ipynb
 ├── README.md
 ```
+## 3. Instructions
+...
 
-## 3. Transfer Learning Models
+## 4. Transfer Learning Models
 ...
 
 |Model|Summary Plot|
@@ -45,7 +48,7 @@
 |ResNet50|![resnet](./visuals/cnn1.png)
 |InceptionV3|![inv](./visuals/cnn2.png)
 
-## 4. Comparing Results
+## 5. Comparing Results
 |Model|Accuracy|Loss|Precision|Recall|
 |:-:|:-:|:-:|:-:|:-:|
 |CNN-1 |  |  |   | |
@@ -56,7 +59,7 @@
 
 ...
 
-## 5. Conclusions
+## 6. Conclusions
 ...
 
-## 6. References
+## 7. References
