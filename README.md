@@ -46,6 +46,8 @@ model_bert: BERT model
 
 (Model training results are summarized further below.)
 
+Unfortunately, the only model that is able to be loaded currently is model_conv. model_glove causes to the environment to crash, and model_bert requires modifications to the model loading function that incorporates definitions for custom layers, which we did not have the time to implement.
+
 ## 4. Exploratory Analysis
 From the data analysis, we learned that the class balance was about even, at 52.17% positive, 47.83% negative. Additionally, both classes have a very similar distribution regarding review length. However, below the wordclouds show that there are differences in what the most common words in each set of data are.
 ![Positive](./images/pos_wordcloud.png)
