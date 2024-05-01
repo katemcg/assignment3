@@ -5,8 +5,8 @@ import numpy as np
 import re
 import string
 import nltk
-from nltk.corpus import stopwords
 #nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 stop_words = stopwords.words('english') + ['u', 'im', 'c']
 
@@ -26,12 +26,12 @@ def clean_text(text):
     text = re.sub('\w*\d\w*', '', text)
     return text
 
-def preprocessor(texts, maxlen=40):
+def preprocessor(text, maxlen=40):
     """
     Preprocesses a list of texts using pre-defined functions to clean text and remove stopwords, tokenises using tf.keras Tokenizer and pads sequences to a fixed length of 40.
 
     Args:
-    texts: List of strings representing input texts.
+    text: List of strings representing input texts.
     maxlen: Maximum length of sequences after padding, set to 40 by default.
 
     Returns:
@@ -47,10 +47,12 @@ def preprocessor(texts, maxlen=40):
     tokenizer = Tokenizer()
 
     # Fit tokenizer on input texts
-    tokenizer.fit_on_texts(texts)
+    tokenizer.fit_on_texts(text)
 
     # Convert texts to sequences of integers
-    sequences = tokenizer.texts_to_sequences(texts)
+    sequences = tokenizer.texts_to_sequences(text)
 
     # Pad sequences to a fixed length
     padded_sequences = pad_sequences(sequences, maxlen)
+
+    return padded_sequences, tokenizer
