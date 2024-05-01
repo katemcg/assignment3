@@ -23,11 +23,11 @@ This repo uses machine learning and deep learning models to predict the sentimen
 |  └── display_results.py
 |  └── requirements.txt
 |  └── README.md
-├── models
-|  └── model_conv.h5
-|  └── model_glove.h5
-|  └── model_bert.h5
-|  └── README.md
+|  └── models
+|    └── model_conv.h5
+|    └── model_glove.h5
+|    └── model_bert.h5
+|    └── README.md
 ├── data
 |  └── test_sample.csv
 |  └── README.md
